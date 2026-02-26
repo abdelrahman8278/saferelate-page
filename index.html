@@ -13,7 +13,7 @@
         href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700;800;900&family=DM+Serif+Display&display=swap"
         rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="css/styles.css" />
 </head>
 
 <body>
@@ -56,7 +56,70 @@
                 </div>
             </div>
             <div class="hero__visual" data-animate="fade-left">
-                <img src="assets/images/client-demo.webp" alt="Client Dashboard Demo" class="hero__demo-img" />
+                <div class="hero__card hero__card--main">
+                    <div class="hero__card-header">
+                        <span>Relationship Well-being Assessment</span>
+                        <div class="hero__card-actions">
+                            <i class="fa-solid fa-eye"></i>
+                            <i class="fa-solid fa-download"></i>
+                            <span class="hero__share-badge"><i class="fa-solid fa-share-nodes"></i> Share</span>
+                        </div>
+                    </div>
+                    <div class="hero__card-body">
+                        <div class="hero__card-left">
+                            <h4>Assessment Overview</h4>
+                            <p class="hero__card-meta">Relationship Well-being Evaluation</p>
+                            <h3>Overall Well-being Score</h3>
+                            <div class="hero__donut">
+                                <svg viewBox="0 0 120 120">
+                                    <circle cx="60" cy="60" r="50" stroke="#e0e0e0" stroke-width="10" fill="none" />
+                                    <circle cx="60" cy="60" r="50" stroke="#1a9e8f" stroke-width="10" fill="none"
+                                        stroke-dasharray="289 314" stroke-linecap="round"
+                                        transform="rotate(-90 60 60)" />
+                                </svg>
+                                <div class="hero__donut-label">
+                                    <span class="hero__donut-value">92%</span>
+                                    <span class="hero__donut-text">Well-being</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hero__card-right">
+                            <h4>Category Breakdown</h4>
+                            <div class="hero__bars">
+                                <div class="hero__bar-row"><span>Emotional Safety</span>
+                                    <div class="hero__bar">
+                                        <div class="hero__bar-fill" style="width:94%"></div>
+                                    </div>
+                                </div>
+                                <div class="hero__bar-row"><span>Communication</span>
+                                    <div class="hero__bar">
+                                        <div class="hero__bar-fill" style="width:88%"></div>
+                                    </div>
+                                </div>
+                                <div class="hero__bar-row"><span>Trust</span>
+                                    <div class="hero__bar">
+                                        <div class="hero__bar-fill" style="width:85%"></div>
+                                    </div>
+                                </div>
+                                <div class="hero__bar-row"><span>Self-Esteem</span>
+                                    <div class="hero__bar">
+                                        <div class="hero__bar-fill hero__bar-fill--pink" style="width:70%"></div>
+                                    </div>
+                                </div>
+                                <div class="hero__bar-row"><span>Conflict Resolution</span>
+                                    <div class="hero__bar">
+                                        <div class="hero__bar-fill hero__bar-fill--purple" style="width:79%"></div>
+                                    </div>
+                                </div>
+                                <div class="hero__bar-row"><span>Emotional Regulation</span>
+                                    <div class="hero__bar">
+                                        <div class="hero__bar-fill" style="width:82%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
