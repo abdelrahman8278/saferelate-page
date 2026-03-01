@@ -1054,6 +1054,10 @@ img {
     grid-template-columns: 1fr;
   }
 
+  .hero__card-body {
+    grid-template-columns: 1fr;
+  }
+
   .domains__grid,
   .profiles__grid,
   .helps__grid {
@@ -1063,9 +1067,21 @@ img {
   .footer__inner {
     grid-template-columns: 1fr 1fr;
   }
+
+  .assessments__right {
+    border-radius: 0 0 var(--radius-lg) var(--radius-lg);
+  }
+
+  .about__image-wrapper {
+    border-radius: var(--radius-lg);
+  }
 }
 
 @media (max-width: 768px) {
+  :root {
+    --spacing-2xl: 4rem;
+    --spacing-xl: 3rem;
+  }
 
   .domains__grid,
   .profiles__grid,
@@ -1077,16 +1093,129 @@ img {
     grid-template-columns: 1fr;
   }
 
+  .navbar {
+    padding: var(--spacing-sm) 0;
+    background: var(--color-primary);
+  }
+
   .navbar__links,
   .navbar__actions {
     display: none;
   }
 
+  .navbar__links.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--color-primary);
+    padding: var(--spacing-lg) 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    gap: 1.5rem;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .navbar__actions.active {
+    display: flex;
+    position: absolute;
+    top: calc(100% + 280px);
+    /* Positioned below nav links */
+    left: 0;
+    width: 100%;
+    background-color: var(--color-primary);
+    padding: 0 0 var(--spacing-lg) 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
   .navbar__hamburger {
     display: flex;
+    z-index: 1001;
+  }
+
+  .navbar__hamburger.active span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .navbar__hamburger.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .navbar__hamburger.active span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
   }
 
   .hero__title {
     font-size: 2.5rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .hero__inner,
+  .about__inner {
+    gap: 2rem;
+  }
+
+  .helps__left,
+  .helps__right,
+  .faq__left,
+  .faq__right,
+  .assessments__left,
+  .assessments__right {
+    padding: 2rem;
+  }
+
+  .profiles__journey {
+    height: 120px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .hero__blob--1 {
+    width: 250px;
+    height: 250px;
+  }
+
+  .hero__blob--2 {
+    width: 350px;
+    height: 350px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero__title {
+    font-size: 2rem;
+  }
+
+  .hero__ctas {
+    flex-direction: column;
+  }
+
+  .hero__card-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .footer__legal {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: flex-start;
+    margin-top: 1rem;
+  }
+
+  .footer__bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .profiles__link {
+    font-size: 0.875rem;
   }
 }
