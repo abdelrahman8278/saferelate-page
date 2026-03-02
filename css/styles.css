@@ -1280,6 +1280,43 @@ img {
     gap: 1rem;
   }
 
+  .hero__card-body {
+    padding: 1rem;
+    gap: 1.5rem;
+  }
+
+  .hero__card-header {
+    padding: 1rem;
+  }
+
+  .hero__donut {
+    width: 90px;
+    height: 90px;
+    margin: 1rem auto;
+  }
+
+  .hero__donut-value {
+    font-size: 1.25rem;
+  }
+
+  .hero__donut-text {
+    font-size: 0.65rem;
+  }
+
+  .hero__card-left h4,
+  .hero__card-right h4 {
+    font-size: 0.9rem;
+  }
+
+  .hero__card-left h3 {
+    font-size: 1.1rem;
+  }
+
+  .hero__bar-row {
+    font-size: 0.75rem;
+    margin-bottom: 0.75rem;
+  }
+
   .footer__legal {
     flex-direction: column;
     gap: 0.5rem;
